@@ -281,6 +281,9 @@ img {
   display: flex;
   align-items: center;
 }
+.skills__name {
+  text-align: start;
+}
 
 /* ===== Desk =====*/
 .desk__container {

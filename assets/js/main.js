@@ -37,6 +37,9 @@ const scrollActive = () => {
 
     if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
       sectionsClass.classList.add("active-link");
+      
+      const url = window.location.href.split("#")[0];
+      window.history.pushState({}, "", `${url}#${sectionId}`);
     } else {
       sectionsClass.classList.remove("active-link");
     }
